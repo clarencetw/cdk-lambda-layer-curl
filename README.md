@@ -11,5 +11,17 @@ Usage:
 import { CurlLayer } from 'cdk-lambda-layer-curl';
 
 declare const fn: lambda.Function;
-fn.addLayers(new CurlLayer(this, 'AwsCliLayer'));
+fn.addLayers(new CurlLayer(this, 'CurlLayer'));
+```
+
+```ts
+import { CurlLayer } from 'cdk-lambda-layer-curl'
+import * as lambda from 'aws-cdk-lib/aws-lambda'
+
+new lambda.Function(this, 'MyLambda', {
+  code: lambda.Code.fromAsset(path.join(__dirname, 'my-lambda-handler')),
+  handler: 'index.main',
+  runtime: lambda.Runtime.PYTHON_3_9,
+  layers: [new CurlLayer(this, 'CurlLayer')]
+});
 ```
