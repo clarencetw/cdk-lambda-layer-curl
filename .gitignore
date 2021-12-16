@@ -55,5 +55,4 @@ tsconfig.json
 cdk.out
 cdk.context.json
 yarn-error.log
-layer.zip
 !/.github/workflows/upgrade-main.yml

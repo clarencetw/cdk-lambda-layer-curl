@@ -9,10 +9,10 @@ const project = new awscdk.AwsCdkConstructLibrary({
   description: 'For lambda layer use curl',
   repositoryUrl: 'https://github.com/clarencetw/cdk-lambda-layer-curl.git',
 
-  workflowBootstrapSteps: [{
-    name: 'build layer.zip',
-    run: 'layer/build.sh',
-  }],
+  // workflowBootstrapSteps: [{
+  //   name: 'build layer.zip',
+  //   run: 'layer/build.sh',
+  // }],
 
   autoApproveOptions: {
     secret: 'GITHUB_TOKEN',
@@ -40,7 +40,7 @@ new Gitpod(project, {
   },
 });
 
-const common_exclude = ['cdk.out', 'cdk.context.json', 'yarn-error.log', 'layer.zip'];
+const common_exclude = ['cdk.out', 'cdk.context.json', 'yarn-error.log'];
 project.gitignore.exclude(...common_exclude);
 
 project.synth();
