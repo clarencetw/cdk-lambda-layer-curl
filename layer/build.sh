@@ -11,9 +11,8 @@ docker build -t ${TAG} .
 
 echo ">> Extrating layer.zip from the build container..."
 CONTAINER=$(docker run -d ${TAG} false)
-docker cp ${CONTAINER}:/layer.zip ../lib/layer.zip
-docker cp ${CONTAINER}:/layer.zip ../src/layer.zip
+docker cp ${CONTAINER}:/layer.zip ../layer/layer.zip
 
 echo ">> Stopping container..."
 docker rm -f ${CONTAINER}
-echo ">> lib/layer.zip is ready"
+echo ">> layer/layer.zip is ready"

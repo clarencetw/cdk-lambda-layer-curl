@@ -10,7 +10,7 @@ import { Construct } from 'constructs';
 export class CurlLayer extends lambda.LayerVersion {
   constructor(scope: Construct, id: string) {
     super(scope, id, {
-      code: lambda.Code.fromAsset(path.join(__dirname, 'layer.zip'), {
+      code: lambda.Code.fromAsset(path.join(__dirname, '..', 'layer', 'layer.zip'), {
         // we hash the Dockerfile (it contains the tools versions) because hashing the zip is non-deterministic
         assetHash: hashFile(path.join(__dirname, '..', 'layer', 'Dockerfile')),
       }),
