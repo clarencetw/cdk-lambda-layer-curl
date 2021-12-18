@@ -1,5 +1,5 @@
-import { Stack } from 'aws-cdk-lib';
-import * as assertions from 'aws-cdk-lib/assertions';
+import * as assertions from '@aws-cdk/assertions';
+import { Stack } from '@aws-cdk/core';
 import { CurlLayer } from '../src';
 
 test('synthesized to a layer version', () => {

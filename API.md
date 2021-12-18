@@ -16,14 +16,14 @@ new CurlLayer(scope: Construct, id: string)
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`scope`](#cdklambdalayercurlcurllayerparameterscope)<span title="Required">*</span> | [`constructs.Construct`](#constructs.Construct) | *No description.* |
+| [`scope`](#cdklambdalayercurlcurllayerparameterscope)<span title="Required">*</span> | [`@aws-cdk/core.Construct`](#@aws-cdk/core.Construct) | *No description.* |
 | [`id`](#cdklambdalayercurlcurllayerparameterid)<span title="Required">*</span> | `string` | *No description.* |
 
 ---
 
 ##### `scope`<sup>Required</sup> <a name="cdk-lambda-layer-curl.CurlLayer.parameter.scope" id="cdklambdalayercurlcurllayerparameterscope"></a>
 
-- *Type:* [`constructs.Construct`](#constructs.Construct)
+- *Type:* [`@aws-cdk/core.Construct`](#@aws-cdk/core.Construct)
 
 ---
 

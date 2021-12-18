@@ -3,16 +3,16 @@ const project = new awscdk.AwsCdkConstructLibrary({
   author: 'clarencetw',
   authorAddress: 'mr.lin.clarence@gmail.com',
   keywords: ['aws', 'cdk', 'curl'],
-  cdkVersion: '2.1.0',
+  cdkVersion: '1.136.0',
   defaultReleaseBranch: 'main',
   name: 'cdk-lambda-layer-curl',
   description: 'For lambda layer use curl',
   repositoryUrl: 'https://github.com/clarencetw/cdk-lambda-layer-curl.git',
 
-  // workflowBootstrapSteps: [{
-  //   name: 'build layer.zip',
-  //   run: 'layer/build.sh',
-  // }],
+  cdkDependencies: [
+    '@aws-cdk/core',
+    '@aws-cdk/aws-lambda',
+  ],
 
   projenUpgradeSecret: 'PROJEN_GITHUB_TOKEN',
   autoApproveOptions: {
