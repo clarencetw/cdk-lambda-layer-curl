@@ -2,7 +2,8 @@
 
 [![NPM version](https://badge.fury.io/js/cdk-lambda-layer-curl.svg)](https://badge.fury.io/js/cdk-lambda-layer-curl)
 [![PyPI version](https://badge.fury.io/py/cdk-lambda-layer-curl.svg)](https://badge.fury.io/py/cdk-lambda-layer-curl)
-![Release](https://github.com/neilkuan/cdk-lambda-layer-curl/workflows/Release/badge.svg)
+![Release](https://github.com/clarencetw/cdk-lambda-layer-curl/workflows/release/badge.svg)
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/clarencetw/cdk-lambda-layer-curl)
 
 Usage:
 

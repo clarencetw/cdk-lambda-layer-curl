@@ -14,6 +14,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   //   run: 'layer/build.sh',
   // }],
 
+  projenUpgradeSecret: 'PROJEN_GITHUB_TOKEN',
   autoApproveOptions: {
     secret: 'GITHUB_TOKEN',
     allowedUsernames: ['clarencetw'],
