@@ -12,14 +12,14 @@ const project = new awscdk.AwsCdkConstructLibrary({
   /**
    * we default release the main branch(cdkv2) with major version 2.
    */
-   majorVersion: 2,
-   defaultReleaseBranch: 'main',
-   /**
-     * we also release the cdkv1 branch with major version 1.
-     */
-   releaseBranches: {
-     cdkv1: { npmDistTag: 'cdkv1', majorVersion: 1 },
-   },
+  majorVersion: 2,
+  defaultReleaseBranch: 'main',
+  /**
+   * we also release the cdkv1 branch with major version 1.
+   */
+  releaseBranches: {
+    cdkv1: { npmDistTag: 'cdkv1', majorVersion: 1 },
+  },
 
   // workflowBootstrapSteps: [{
   //   name: 'build layer.zip',
