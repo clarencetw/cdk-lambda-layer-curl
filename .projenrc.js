@@ -31,6 +31,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
     secret: 'GITHUB_TOKEN',
     allowedUsernames: ['clarencetw'],
   },
+  autoApproveUpgrades: true,
+
   catalog: {
     twitter: 'Clarence_Lin',
     announce: false,
